@@ -1,0 +1,41 @@
+ header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.typewriter {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+    border-right: .15em solid white; /* cursor */
+    letter-spacing: .05em;
+    animation: blink-caret .75s step-end infinite;
+    
+    display: inline-block;
+    width: 44ch;          /* ancho reservado */
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+@media (max-width: 600px) {
+  .typewriter {
+    font-size: 1.5em;
+    width: 30ch; /* más pequeño en pantallas chicas */
+  }
+}
+
+.proyecto-img {
+  width: 100%;       /* ocupa todo el ancho del contenedor */
+  height: 200px;     /* altura fija (ajústala a tu diseño) */
+  object-fit: cover; /* recorta sin deformar */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
